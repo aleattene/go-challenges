@@ -11,46 +11,43 @@ func TestSumSquaredNumbers(t *testing.T) {
 	assert.Equal(t, SumSquaredNumbers([]int{}), 0)
 	assert.Equal(t, SumSquaredNumbers([]int{-1, -2}), 5)
 	assert.Equal(t, SumSquaredNumbers([]int{-1, 0, 1}), 2)
+	assert.Equal(t, SumSquaredNumbers([]int{-2, 17, 6, -11, -12, -13, 9, 20}), 1244)
+	assert.Equal(t, SumSquaredNumbers([]int{13, -8, -6, -14, -1, -7}), 515)
+	assert.Equal(t, SumSquaredNumbers([]int{3, -20, 0, 7, -4}), 474)
+	assert.Equal(t, SumSquaredNumbers([]int{-18, 15, -20, -12, 18}), 1417)
+	assert.Equal(t, SumSquaredNumbers([]int{-17, -9, -9, 8, -4}), 531)
+	assert.Equal(t, SumSquaredNumbers([]int{5, -7}), 74)
+	assert.Equal(t, SumSquaredNumbers([]int{-18, -15, -16}), 805)
+	assert.Equal(t, SumSquaredNumbers([]int{9, 16, -2, 18, 9, -10, -14, 20, -17}), 1731)
+	assert.Equal(t, SumSquaredNumbers([]int{2, -17, -12, -17, 9, 9, 16, 6, 11, -11}), 1422)
+	assert.Equal(t, SumSquaredNumbers([]int{13, 6, 11}), 326)
+	assert.Equal(t, SumSquaredNumbers([]int{-1, -13}), 170)
+	assert.Equal(t, SumSquaredNumbers([]int{4, -19, -16, -1, -8, 20, -2, -16, 13}), 1527)
+	assert.Equal(t, SumSquaredNumbers([]int{-19, -3, 19, 3, 12, 19, -19, 11, -11, -17}), 2137)
+	assert.Equal(t, SumSquaredNumbers([]int{-18, 14, 12, 5, -6, -2, 2, -14, 2}), 933)
+	assert.Equal(t, SumSquaredNumbers([]int{2, 18, 11, 10, 9, -8, 17, 14}), 1179)
+	assert.Equal(t, SumSquaredNumbers([]int{11, -5}), 146)
+	assert.Equal(t, SumSquaredNumbers([]int{3, 20, 8, 0, -12, -12, -11, -20}), 1282)
+	assert.Equal(t, SumSquaredNumbers([]int{-14, 14, -17, 10, -10}), 881)
+	assert.Equal(t, SumSquaredNumbers([]int{11, 4, -2, 10, 18, -12, 19}), 1070)
+	assert.Equal(t, SumSquaredNumbers([]int{4, 1}), 17)
+	assert.Equal(t, SumSquaredNumbers([]int{-3, 2, 6, -12, 5}), 218)
+	assert.Equal(t, SumSquaredNumbers([]int{1, 9, 19, -12, -12, -12}), 875)
+	assert.Equal(t, SumSquaredNumbers([]int{-3, 7, -2, -4, -19, -8, -13, 6, -18, 15}), 1257)
+	assert.Equal(t, SumSquaredNumbers([]int{14, -1, -2, -15, -13}), 595)
+	assert.Equal(t, SumSquaredNumbers([]int{5, -7, -13, -12, -2}), 391)
+	assert.Equal(t, SumSquaredNumbers([]int{7, -14, -6, -2}), 285)
+	assert.Equal(t, SumSquaredNumbers([]int{20, 16, -5, -8, 17, 4, 17}), 1339)
+	assert.Equal(t, SumSquaredNumbers([]int{0, 6, -12, 18, -11, -7}), 674)
+	assert.Equal(t, SumSquaredNumbers([]int{-19, -11, 2, 17, -18, -15, -16, 18, -14}), 2100)
+	assert.Equal(t, SumSquaredNumbers([]int{5, -20, -8, -6, 14, -12, -4, 7}), 930)
+	assert.Equal(t, SumSquaredNumbers([]int{-17, 12, 2}), 437)
+	assert.Equal(t, SumSquaredNumbers([]int{-2, 20, -15, 16, 12, 13}), 1198)
+	assert.Equal(t, SumSquaredNumbers([]int{-20, 19, -1, 9, -13}), 1012)
+	assert.Equal(t, SumSquaredNumbers([]int{4, 17, 17, -6, 10}), 730)
+	assert.Equal(t, SumSquaredNumbers([]int{1, -2}), 5)
+	assert.Equal(t, SumSquaredNumbers([]int{-14, -3, -4, -15, -16}), 702)
+	assert.Equal(t, SumSquaredNumbers([]int{-16, 19, 8, -10, 3, 0, 12, -19}), 1295)
+	assert.Equal(t, SumSquaredNumbers([]int{1, 12, 19, -18, 19, 3, 14, -6}), 1432)
+	assert.Equal(t, SumSquaredNumbers([]int{-15, 11, 7, -15, 16, -20, -19}), 1637)
 }
-
-// TO FIX
-// [-2 17 6 -11 -12 -13 9 20] 1244
-// [13 -8 -6 -14 -1 -7] 515
-// [3 -20 0 7 -4] 474
-// [-18 15 -20 -12 18] 1417
-// [-17 -9 -9 8 -4] 531
-// [5 -7] 74
-// [-18 -15 -16] 805
-// [9 16 -2 18 9 -10 -14 20 -17] 1731
-// [2 -17 -12 -17 9 9 16 6 11 -11] 1422
-// [13 6 11] 326
-// [-1 -13] 170
-// [4 -19 -16 -1 -8 20 -2 -16 13] 1527
-// [-19 -3 19 3 12 19 -19 11 -11 -17] 2137
-// [-18 14 12 5 -6 -2 2 -14 2] 933
-// [2 18 11 10 9 -8 17 14] 1179
-// [11 -5] 146
-// [3 20 8 0 -12 -12 -11 -20] 1282
-// [-14 14 -17 10 -10] 881
-// [11 4 -2 10 18 -12 19] 1070
-// [4 1] 17
-// [-3 2 6 -12 5] 218
-// [1 9 19 -12 -12 -12] 875
-// [-3 7 -2 -4 -19 -8 -13 6 -18 15] 1257
-// [14 -1 -2 -15 -13] 595
-// [5 -7 -13 -12 -2] 391
-// [7 -14 -6 -2] 285
-// [20 16 -5 -8 17 4 17] 1339
-// [-12 -2]
-// [0 6 -12 18 -11 -7] 674
-// [-19 -11 2 17 -18 -15 -16 18 -14] 2100
-// [5 -20 -8 -6 14 -12 -4 7] 930
-// [-17 12 2] 437
-// [-2 20 -15 16 12 13] 1198
-// [-20 19 -1 9 -13] 1012
-// [4 17 17 -6 10] 730
-// [1 -2] 5
-// [-14 -3 -4 -15 -16] 702
-// [-16 19 8 -10 3 0 12 -19] 1295
-// [1 12 19 -18 19 3 14 -6] 1432
-// [-15 11 7 -15 16 -20 -19] 1637
